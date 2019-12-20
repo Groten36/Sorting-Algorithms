@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 import math
 from random import randrange
 
 
+=======
+>>>>>>> cb2aa518baad3e508ddebe40a0d9c8566c7818ce
 def insertion(li: object) -> object:
     for i in range(1, len(li)):
         j = i - 1
@@ -12,9 +15,14 @@ def insertion(li: object) -> object:
         li[j + 1] = x
     return li
 
+<<<<<<< HEAD
 
 def insertion_reverse(li: object) -> object:
     for i in range(len(li) - 1, 0, -1):
+=======
+def insertion_reverse(li: object) -> object:
+    for i in range(len(li)-1, 0, -1):
+>>>>>>> cb2aa518baad3e508ddebe40a0d9c8566c7818ce
         j = i + 1
         x = li[i]
         while j < len(li) and li[j] > x:
@@ -23,12 +31,17 @@ def insertion_reverse(li: object) -> object:
         li[j - 1] = x
     return li
 
+<<<<<<< HEAD
 
 def print_list(li: object) -> object:
+=======
+def print_list(*li):
+>>>>>>> cb2aa518baad3e508ddebe40a0d9c8566c7818ce
     for i in li:
         print(i)
 
 
+<<<<<<< HEAD
 def selection(A: object) -> object:
     b = []
     while len(A) > 0:
@@ -211,4 +224,10 @@ l = [77, 26, 84, 26, 84, 25, 25, 70, 23, 70, 23, 40, 86, 35]
 counting_sort(l,87)
 # radix_sort(l, 2) do sprawdzenia !!! to chyba nie ma tak wyglądać
 bucket_sort(l)
+=======
+l = [77, 26, 84, 26, 84, 25, 25, 7, 23, 7, 23, 4, 86, 35]
+#l = insertion(l)
+#print_list(l)
+l=insertion_reverse(l)
+>>>>>>> cb2aa518baad3e508ddebe40a0d9c8566c7818ce
 print_list(l)
